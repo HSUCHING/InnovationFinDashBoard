@@ -30,7 +30,13 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('InnovationFinDashBoard.view.Main'));
+
+
+
+        var cc=Ext.create('InnovationFinDashBoard.view.Main');
+        console.log(cc);
+        console.log(Ext.getCmp('myPanel'));
+        Ext.Viewport.add(cc);
     },
 
     onUpdated: function() {
