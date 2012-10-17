@@ -31,12 +31,7 @@ Ext.application({
 
         // Initialize the main view
 
-
-
-        var cc=Ext.create('InnovationFinDashBoard.view.Main');
-        console.log(cc);
-        console.log(Ext.getCmp('myPanel'));
-        Ext.Viewport.add(cc);
+        Ext.Viewport.add(Ext.create('InnovationFinDashBoard.view.Main'));
     },
 
     onUpdated: function() {
