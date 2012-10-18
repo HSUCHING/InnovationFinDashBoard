@@ -2,12 +2,14 @@ Ext.application({
     name: 'InnovationFinDashBoard',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'Ext.Img','Ext.field.Search','Ext.field.Spinner'
     ],
 
     views: ['Main',
-            'InnovationFinDashBoard.view.TableView',
-            'InnovationFinDashBoard.view.TabViewShow'
+            'TableView',
+            'TabViewShow'
+
     ],
 
 
@@ -34,6 +36,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
+
 
         Ext.Viewport.add(Ext.create('InnovationFinDashBoard.view.Main'));
     },

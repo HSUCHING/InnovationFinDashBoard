@@ -7,6 +7,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
 
 
     config:{
+        autoDestory : false,
         id:'myPanel',
         fullscreen:true,
         cls:'backgd',
@@ -42,12 +43,16 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     cls:'imgborder',
                     listeners:{
                         tap:function(img,ev){
-                            Ext.Msg.alert(img.id);
-                            var tabview=Ext.create('InnovationFinDashBoard.view.TabViewShow');
+//                            Ext.Msg.alert(img.id);
+//                            var tabview=new InnovationFinDashBoard.view.TabViewShow();
                             Ext.getCmp('myPanel').push(
 //                                title:'Second',
 //                                html:'Second view!'
-                                tabview
+//                                tabview
+                                {
+                                    xtype:'tabViewshow'
+//
+                                }
                             )
                         }
                     }

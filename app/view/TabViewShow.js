@@ -7,9 +7,7 @@
  */
 Ext.define("InnovationFinDashBoard.view.TabViewShow",{
     extend: 'Ext.TabPanel',
-    requires:[
-        'InnovationFinDashBoard.view.TableView'
-    ],
+    xtype:'tabViewshow',
 
     config:{
         id:'tabPanel',
@@ -24,7 +22,7 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
             },
             {
                 title:'Table View',
-                items:[Ext.create('InnovationFinDashBoard.view.TableView')],
+                items:[{xtype:'tableview'}],
                 iconCls:'user'
             },
             {

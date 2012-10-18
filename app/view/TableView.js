@@ -7,7 +7,9 @@
  */
 Ext.define("InnovationFinDashBoard.view.TableView",{
     extend: 'Ext.Panel',
+    xtype:'tableview',
     config:{
+        autoDestory:true,
         id:'tableview',
         layout:'fit',
         items:[{
@@ -75,15 +77,8 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
         },{
             xtype:'panel',
             html:'content'
-
         }
-
-
-
         ]
     }
-
-
-
 
 })
