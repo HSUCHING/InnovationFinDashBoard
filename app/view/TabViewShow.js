@@ -7,6 +7,9 @@
  */
 Ext.define("InnovationFinDashBoard.view.TabViewShow",{
     extend: 'Ext.TabPanel',
+    requires:[
+        'InnovationFinDashBoard.view.TableView'
+    ],
 
     config:{
         id:'tabPanel',
@@ -15,13 +18,18 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
 //            activeItem:1,
         layout:{animation:{type:'flip',direction:'right',duration:1000}},
         items:[{
-            title:'主页',
-            html:'主页',
-            iconCls:'home'
+                title:'Tree View',
+                html:'Tree View',
+                iconCls:'home'
             },
             {
-                title:'合同',
-                html:'合同',
+                title:'Table View',
+                items:[Ext.create('InnovationFinDashBoard.view.TableView')],
+                iconCls:'user'
+            },
+            {
+                title:'Chart View',
+                html:'Chart View',
                 iconCls:'user'
             }],
         listeners:{

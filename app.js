@@ -5,7 +5,11 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    views: ['Main',
+            'InnovationFinDashBoard.view.TableView',
+            'InnovationFinDashBoard.view.TabViewShow'
+    ],
+
 
     icon: {
         '57': 'resources/icons/Icon.png',

@@ -9727,3 +9727,8 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #ffffff;
     text-align: center;
 }
+
+#space{
+    width:10px;
+    background-color: white !important;
+}

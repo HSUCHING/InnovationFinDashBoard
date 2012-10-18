@@ -14,7 +14,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
             ui: 'dark',
             docked: 'top',
             cls:'navibar',
-            height:100
+            height:80
         },
         items:[{
 //            cls:'hometop',
