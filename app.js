@@ -3,13 +3,14 @@ Ext.application({
 
     requires: [
         'Ext.MessageBox',
-        'Ext.Img','Ext.field.Search','Ext.field.Spinner'
+        'Ext.Img','Ext.field.Search','Ext.field.Spinner','Ext.DataView', 'Ext.data.Store'
     ],
 
     views: ['Main',
             'TableView',
-            'TabViewShow'
-
+            'TabViewShow',
+            'TreeView',
+            'TableDataView'
     ],
 
 

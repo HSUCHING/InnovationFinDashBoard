@@ -52,6 +52,61 @@
     </style>
     <!-- The line below must be kept intact for Sencha Command to build your application -->
     <script id="microloader" type="text/javascript" src="sdk/microloader/development.js"></script>
+
+    <script type="text/javascript">
+        function getElementsByClassName(className, tag, elm){
+            var tag = tag || "*";
+            var elm = elm || document;
+            var returnElements = [];
+            var trselected=document.getElementsByClassName(className).item();
+            returnElements.push(trselected);
+            var elements = (tag == "*" && elm.all)? elm.all : trselected.children;
+            var current;
+            var length = elements.length;
+            for(var i=0; i<length; i++){
+                returnElements.push(elements[i]);
+            }
+            return returnElements;
+        }
+
+        function addClassName(elm, className){
+            var currentClass = elm.className;
+            if(!new RegExp(("(^|\\s)" + className + "(\\s|$)"), "i").test(currentClass)){
+                elm.className = currentClass + ((currentClass.length > 0)? " " : "") + className;
+            }
+            return elm.className;
+        }
+
+        function removeClassName(elm, className){
+            var classToRemove = new RegExp(("(^|\\s)" + className + "(\\s|$)"), "i");
+            elm.className = elm.className.replace(classToRemove, "").replace(/^\s+|\s+$/g, "");
+            return elm.className;
+        }
+
+        function activateThisColumn(column) {
+            var table = document.getElementById('tableshow');
+
+            // first, remove the 'on' class from all other th's
+            var ths = table.getElementsByTagName('tr');
+            for (var g=0; g<ths.length; g++) {
+                removeClassName(ths[g], 'on');
+            }
+            var ths2 = table.getElementsByTagName('th');
+            for (var g=0; g<ths2.length; g++) {
+                removeClassName(ths2[g], 'on');
+            }
+
+
+            // now, add the class 'on' to the selected th
+            var newths = getElementsByClassName(column, 'tr', table);
+            for (var h=0; h<newths.length; h++) {
+                addClassName(newths[h], 'on');
+            }
+
+        }
+
+    </script>
+
 </head>
 <body>
     <div id="appLoadingIndicator">

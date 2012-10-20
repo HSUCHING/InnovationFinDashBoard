@@ -13,11 +13,13 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
         id:'tabPanel',
         ui:'dark',
         tabBarPosition:'bottom',
+        fullscreen:true,
 //            activeItem:1,
         layout:{animation:{type:'flip',direction:'right',duration:1000}},
         items:[{
                 title:'Tree View',
-                html:'Tree View',
+//                html:'Tree View',
+                items:[{xtype:'treeview'}],
                 iconCls:'home'
             },
             {

@@ -8,14 +8,21 @@
 Ext.define("InnovationFinDashBoard.view.TableView",{
     extend: 'Ext.Panel',
     xtype:'tableview',
+
     config:{
         autoDestory:true,
         id:'tableview',
-        layout:'fit',
+        layout:{
+            type:'vbox',
+            align:'center',
+            pack:'center'
+        },
+
         items:[{
             xtype: 'toolbar',
 //            title:'我的标题栏',
             docked:'top',
+//            height:40,
             items:[{
                 xtype:'button',
                 text:'View All Data',
@@ -24,7 +31,6 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
 
                 xtype:'spacer',
                 width:30
-
             },{
                 xtype:'image',
                 src:'resources/icons/dividing.png',
@@ -59,12 +65,19 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                 xtype:'spacer',
                 width:30
             },{
+                xtype:'panel',
+                items:{
                 xtype:'spinnerfield',
+//                id:'spinnertoolbar',
                 maxValue:2012,
+                minValue:1990,
                 value:2000,
                 increment:1,
                 groupButtons:false,
-                width:200
+                style:{"margin-top":-10},
+                width:250,
+                label: 'Year:',
+                cycle: true}
             },{
                 text:'Q1'
             },{
@@ -74,11 +87,23 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
             },{
                 text:'Q4'
             }]
+        }
+            ,{
+            xtype:'panel',
+            height:100
         },{
             xtype:'panel',
-            html:'content'
+            id:'tabledataview',
+            layout:{
+                type:'vbox',
+                align:'center',
+                pack:'center'
+            },
+            items:[{
+                xtype: 'tabledataview'
+            }
+            ]
         }
         ]
     }
-
 })
