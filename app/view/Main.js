@@ -2,8 +2,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
     extend: 'Ext.navigation.View',
 
     requires: [
-        'Ext.Img',
-        'InnovationFinDashBoard.view.TabViewShow'
+        'Ext.Img'
     ],
 
 
@@ -45,16 +44,15 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     listeners:{
                         tap:function(img,ev){
 //                            Ext.Msg.alert(img.id);
-//                            var tabview=new InnovationFinDashBoard.view.TabViewShow();
+                            var tabview=new InnovationFinDashBoard.view.TabViewShow();
                             Ext.getCmp('myPanel').push(
 //                                title:'Second',
 //                                html:'Second view!'
-//                                tabview
-                                {
-                                    xtype:'tabViewShow',
-                                    id:'tabPanel'
-//
-                                }
+                                tabview
+//                                {
+//                                    xtype:'tabViewShow',
+//                                    id:'tabPanel'
+//                                }
                             )
                         }
                     }

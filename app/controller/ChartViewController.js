@@ -39,7 +39,7 @@ Ext.define("InnovationFinDashBoard.controller.ChartViewController",{
 
     init : function() {
 //        Ext.getStore('DimensionStore').on('load', this.renderDimensions, this);
-//        Ext.getStore('DimensionStore').load(this.renderDimensions, this);
+        Ext.getStore('DimensionStore').load(this.renderDimensions, this);
 
     },
 
@@ -80,7 +80,7 @@ Ext.define("InnovationFinDashBoard.controller.ChartViewController",{
 
     settingDimensions:function(){
 //        this.renderDimensions();
-        this.getDimensionBar().items.items[0].setHidden();
+        this.getDimensionBar().items.items[0].hide();
         this.getDimensionBar().hide();
         this.getDimensionBar().show();
     },

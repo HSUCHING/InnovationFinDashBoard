@@ -29,7 +29,7 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
             },
             {
                 title:'Chart View',
-                items:[{xtype:'chartview'}],
+                xtype:'chartview',
                 iconCls:'user'
             }],
         listeners:{
@@ -50,7 +50,6 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
 //                    var it=item.getItems();
 //                    item.getItems().items[0].addCls('colorRed');
                 console.log(item.getActiveItem().title);
-//                application.getController('InnovationFinDashBoard.controller.ChartViewController').renderDimensions();
 
             }
         }

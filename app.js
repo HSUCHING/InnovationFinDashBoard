@@ -1,4 +1,4 @@
-//var application;
+
 Ext.application({
     name: 'InnovationFinDashBoard',
 
@@ -61,8 +61,9 @@ Ext.application({
 
         // Initialize the main view
 
-//        application=this;
+
         Ext.Viewport.add(Ext.create('InnovationFinDashBoard.view.Main'));
+
     },
 
     onUpdated: function() {
