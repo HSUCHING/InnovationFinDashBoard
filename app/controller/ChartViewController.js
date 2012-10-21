@@ -1,0 +1,93 @@
+/**
+ * Created with JetBrains WebStorm.
+ * User: Hsuching
+ * Date: 12-10-21
+ * Time: 上午11:27
+ * To change this template use File | Settings | File Templates.
+ */
+Ext.define("InnovationFinDashBoard.controller.ChartViewController",{
+    extend: 'Ext.app.Controller',
+
+    config:{
+        id:'chartviewcontroller',
+        refs:{
+            ChartView:'[xtype=chartview]',
+            DimensionBar:'#dimensionbar',
+
+            mypanel:'#myPanel',
+            tabpanel:'#tabPanel',
+            imgpanel:'#dupont',
+//            DimensionBar
+            DimensionItem : '[xtype=dimensionitem]',
+//            AddDimensionBar : '[xtype=adddimensionview]',
+
+            DimensionSideBar:'#dimensionsidebar',
+
+//            Button
+            SetDimensionButton:'button[action=setDimension]'
+
+        },
+
+        control:{
+            SetDimensionButton:{
+                tap:'settingDimensions'
+            }
+
+
+        }
+    },
+
+    init : function() {
+//        Ext.getStore('DimensionStore').on('load', this.renderDimensions, this);
+//        Ext.getStore('DimensionStore').load(this.renderDimensions, this);
+
+    },
+
+    renderDimensions: function() {
+        console.log(this.getTabpanel());
+        console.log(this.getImgpanel());
+        var DimBar =  this.getDimensionBar();
+        console.log(Ext.getCmp('chartView'));
+        console.log("Dimbar:"+DimBar);
+        var DimItem =  this.getDimensionItem();
+        console.log(DimItem);
+        console.log(this.getDimensionSideBar());
+//        var AddDimView = this.getAddDimensionBar();
+        var dimensions = Ext.getStore('DimensionStore').getData().items;
+        console.log(dimensions);
+        var selectedDimensions = new Array();
+        var deselectedDimensions = new Array();
+        for(var key in dimensions){
+            if(dimensions[key].data.selected){
+                selectedDimensions.push(dimensions[key]);
+            }else{
+                deselectedDimensions.push(dimensions[key]);
+            };
+        };
+        for(var key in selectedDimensions){
+            DimBar.getItems().items.push({
+                xtype: 'dimensionitem',
+                html: selectedDimensions[key].data.name
+            });
+        };
+//        for(var key in deselectedDimensions){
+//            AddDimView.addTile({
+//                xtype: 'dimensiontile',
+//                name: deselectedDimensions[key].data.name
+//            });
+//        };
+    },
+
+    settingDimensions:function(){
+//        this.renderDimensions();
+        this.getDimensionBar().items.items[0].setHidden();
+        this.getDimensionBar().hide();
+        this.getDimensionBar().show();
+    },
+
+    loadDimension:function(){
+        Ext.Msg.alert("aa");
+    }
+
+
+})

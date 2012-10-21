@@ -7,7 +7,7 @@
  */
 Ext.define("InnovationFinDashBoard.view.TabViewShow",{
     extend: 'Ext.TabPanel',
-    xtype:'tabViewshow',
+    xtype:'tabViewShow',
 
     config:{
         id:'tabPanel',
@@ -29,7 +29,7 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
             },
             {
                 title:'Chart View',
-                html:'Chart View',
+                items:[{xtype:'chartview'}],
                 iconCls:'user'
             }],
         listeners:{
@@ -39,6 +39,10 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
                 console.log(newValue);
                 newValue.addCls('colorRed');
                 console.log(item.getActiveItem().title);
+                if(newValue.title=='Chart View'){
+                    console.log("hhh");
+                }
+
                 return true;
             },
             painted:function(item){
@@ -46,6 +50,7 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
 //                    var it=item.getItems();
 //                    item.getItems().items[0].addCls('colorRed');
                 console.log(item.getActiveItem().title);
+//                application.getController('InnovationFinDashBoard.controller.ChartViewController').renderDimensions();
 
             }
         }

@@ -10,7 +10,7 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
     xtype:'tableview',
 
     config:{
-        autoDestory:true,
+//        autoDestory:true,
         id:'tableview',
         layout:{
             type:'vbox',
@@ -87,8 +87,7 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
             },{
                 text:'Q4'
             }]
-        }
-            ,{
+        },{
             xtype:'panel',
             height:100
         },{

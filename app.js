@@ -1,17 +1,40 @@
+//var application;
 Ext.application({
     name: 'InnovationFinDashBoard',
 
     requires: [
         'Ext.MessageBox',
-        'Ext.Img','Ext.field.Search','Ext.field.Spinner','Ext.DataView', 'Ext.data.Store'
+        'Ext.Img',
+        'Ext.field.Search',
+        'Ext.field.Spinner',
+        'Ext.DataView',
+        'Ext.data.Store',
+        'Ext.data.Model'
     ],
 
     views: ['Main',
             'TableView',
             'TabViewShow',
             'TreeView',
-            'TableDataView'
+            'TableDataView',
+            'ChartView',
+            'DimensionItem'
     ],
+
+    controllers:[
+        'ChartViewController'
+    ],
+
+    stores:[
+        'DimensionStore'
+    ],
+
+    models:[
+        'DimensionModel'
+    ],
+
+
+
 
 
     icon: {
@@ -38,7 +61,7 @@ Ext.application({
 
         // Initialize the main view
 
-
+//        application=this;
         Ext.Viewport.add(Ext.create('InnovationFinDashBoard.view.Main'));
     },
 

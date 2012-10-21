@@ -2,7 +2,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
     extend: 'Ext.navigation.View',
 
     requires: [
-        'Ext.Img'
+        'Ext.Img',
+        'InnovationFinDashBoard.view.TabViewShow'
     ],
 
 
@@ -50,7 +51,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
 //                                html:'Second view!'
 //                                tabview
                                 {
-                                    xtype:'tabViewshow'
+                                    xtype:'tabViewShow',
+                                    id:'tabPanel'
 //
                                 }
                             )
