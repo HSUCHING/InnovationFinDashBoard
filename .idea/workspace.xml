@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da18f0ef-eab9-4956-bb9a-e8d3e18c1f5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/ChartViewController.js" afterPath="$PROJECT_DIR$/app/controller/ChartViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ChartView.js" afterPath="$PROJECT_DIR$/app/view/ChartView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/DimensionItem.js" afterPath="$PROJECT_DIR$/app/view/DimensionItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Main.js" afterPath="$PROJECT_DIR$/app/view/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/TabViewShow.js" afterPath="$PROJECT_DIR$/app/view/TabViewShow.js" />
-    </list>
+    <list default="true" id="da18f0ef-eab9-4956-bb9a-e8d3e18c1f5d" name="Default" comment="" />
     <ignored path="InnovationFinDashBoard.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,7 +70,7 @@
       <file leaf-file-name="DimensionItem.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/DimensionItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="34" selection-start="685" selection-end="685" vertical-scroll-proportion="0.37403402">
+            <state line="19" column="18" selection-start="463" selection-end="463" vertical-scroll-proportion="0.06800618">
               <folding>
                 <element signature="e#0#160#0" expanded="false" />
               </folding>
@@ -497,7 +489,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/DimensionItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="34" selection-start="685" selection-end="685" vertical-scroll-proportion="0.37403402">
+        <state line="19" column="18" selection-start="463" selection-end="463" vertical-scroll-proportion="0.06800618">
           <folding>
             <element signature="e#0#160#0" expanded="false" />
           </folding>
