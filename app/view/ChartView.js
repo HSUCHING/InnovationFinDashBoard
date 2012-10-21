@@ -13,13 +13,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
     xtype : 'chartview',
     id:'chartView',
     config : {
-//        scrollable : {
-//            direction : 'horizontal',
-//            slotSnapSize : {
-//                x : 180,
-//                y : 5
-//            }
-//        },
 //        cls : 'componentBorder',
         layout:{
             type:'vbox',
@@ -32,6 +25,13 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
             items:[{
                 xtype : 'panel',
                 id: 'dimensionbar',
+//                scrollable : {
+//                    direction : 'horizontal'
+////                    slotSnapSize : {
+////                        x : 180,
+////                        y : 5
+////                    }
+//                },
                 height:'100%',
                 layout:{
                     type:'hbox',

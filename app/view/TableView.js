@@ -65,19 +65,16 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                 xtype:'spacer',
                 width:30
             },{
-                xtype:'panel',
-                items:{
                 xtype:'spinnerfield',
-//                id:'spinnertoolbar',
+                id:'spinnertoolbar',
                 maxValue:2012,
                 minValue:1990,
                 value:2000,
                 increment:1,
                 groupButtons:false,
-                style:{"margin-top":-10},
                 width:250,
                 label: 'Year:',
-                cycle: true}
+                cycle: true
             },{
                 text:'Q1'
             },{
@@ -87,9 +84,6 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
             },{
                 text:'Q4'
             }]
-        },{
-            xtype:'panel',
-            height:100
         },{
             xtype:'panel',
             id:'tabledataview',

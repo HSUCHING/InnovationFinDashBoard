@@ -19,12 +19,12 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
         items:[{
                 title:'Tree View',
 //                html:'Tree View',
-                items:[{xtype:'treeview'}],
+                xtype:'treeview',
                 iconCls:'home'
             },
             {
                 title:'Table View',
-                items:[{xtype:'tableview'}],
+                xtype:'tableview',
                 iconCls:'user'
             },
             {
