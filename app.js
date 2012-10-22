@@ -18,7 +18,11 @@ Ext.application({
             'TreeView',
             'TableDataView',
             'ChartView',
-            'DimensionItem'
+            'DimensionItem1',
+            'DimensionItem2',
+            'DimensionItem3',
+            'DimensionItem4',
+            'DimensionItem5'
     ],
 
     controllers:[

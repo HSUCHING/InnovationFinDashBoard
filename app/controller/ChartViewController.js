@@ -5,6 +5,7 @@
  * Time: 上午11:27
  * To change this template use File | Settings | File Templates.
  */
+
 Ext.define("InnovationFinDashBoard.controller.ChartViewController",{
     extend: 'Ext.app.Controller',
 
@@ -13,6 +14,7 @@ Ext.define("InnovationFinDashBoard.controller.ChartViewController",{
         refs:{
             ChartView:'[xtype=chartview]',
             DimensionBar:'#dimensionbar',
+            DimensionBar2:'#dimensionbar2',
 
             mypanel:'#myPanel',
             tabpanel:'#tabPanel',
@@ -24,22 +26,25 @@ Ext.define("InnovationFinDashBoard.controller.ChartViewController",{
             DimensionSideBar:'#dimensionsidebar',
 
 //            Button
-            SetDimensionButton:'button[action=setDimension]'
-
+            SetDimensionButton:'button[action=setDimension]',
+            AddDimensionButton:'button[action=addDimension]'
         },
 
         control:{
             SetDimensionButton:{
                 tap:'settingDimensions'
-            }
+            },
 
+            AddDimensionButton:{
+                tap:'addDimensions'
+            }
 
         }
     },
 
     init : function() {
 //        Ext.getStore('DimensionStore').on('load', this.renderDimensions, this);
-        Ext.getStore('DimensionStore').load(this.renderDimensions, this);
+//        Ext.getStore('DimensionStore').load(this.renderDimensions, this);
 
     },
 
@@ -80,9 +85,34 @@ Ext.define("InnovationFinDashBoard.controller.ChartViewController",{
 
     settingDimensions:function(){
 //        this.renderDimensions();
-        this.getDimensionBar().items.items[0].hide();
-        this.getDimensionBar().hide();
-        this.getDimensionBar().show();
+        var temp=this.getDimensionBar().getItems().items;
+        if(temp[0].items.items[0].getHidden()==true){
+            for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
+                cc.items.items[0].show();
+//                cc.items.items[2].show();
+            }
+            temp=this.getDimensionBar2().getItems().items;
+            for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
+//                cc.items.items[0].show();
+                cc.items.items[2].show();
+            }
+        }else{
+            for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
+                cc.items.items[0].hide();
+//                cc.items.items[2].hide();
+            }
+            temp=this.getDimensionBar2().getItems().items;
+            for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
+//                cc.items.items[0].hide();
+                cc.items.items[2].hide();
+            }
+        }
+    },
+    addDimensions:function(){
+        if(this.getDimensionBar2().getHidden()==true)
+            this.getDimensionBar2().show();
+        else
+            this.getDimensionBar2().hide();
     },
 
     loadDimension:function(){
