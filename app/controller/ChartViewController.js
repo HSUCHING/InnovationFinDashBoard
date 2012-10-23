@@ -86,25 +86,25 @@ Ext.define("InnovationFinDashBoard.controller.ChartViewController",{
     settingDimensions:function(){
 //        this.renderDimensions();
         var temp=this.getDimensionBar().getItems().items;
-        if(temp[0].items.items[0].getHidden()==true){
-            for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
-                cc.items.items[0].show();
-//                cc.items.items[2].show();
-            }
-            temp=this.getDimensionBar2().getItems().items;
+        if(temp[0].items.items[2].getHidden()==true){
             for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
 //                cc.items.items[0].show();
                 cc.items.items[2].show();
             }
-        }else{
-            for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
-                cc.items.items[0].hide();
-//                cc.items.items[2].hide();
-            }
             temp=this.getDimensionBar2().getItems().items;
+            for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
+                cc.items.items[0].show();
+//                cc.items.items[2].show();
+            }
+        }else{
             for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
 //                cc.items.items[0].hide();
                 cc.items.items[2].hide();
+            }
+            temp=this.getDimensionBar2().getItems().items;
+            for(var i= 0,cc=temp[i];i<temp.length;i++,cc=temp[i]){
+                cc.items.items[0].hide();
+//                cc.items.items[2].hide();
             }
         }
     },

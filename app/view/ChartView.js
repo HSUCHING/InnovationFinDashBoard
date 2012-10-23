@@ -5,16 +5,6 @@
  * Time: 上午10:28
  * To change this template use File | Settings | File Templates.
  */
-var cc1=Ext.create('InnovationFinDashBoard.view.DimensionItem1',{id:'dimensionitem1',autoDestory:false});
-var cc2=Ext.create('InnovationFinDashBoard.view.DimensionItem2',{id:'dimensionitem2',autoDestory:false});
-var cc3=Ext.create('InnovationFinDashBoard.view.DimensionItem3',{id:'dimensionitem3'});
-var cc4=Ext.create('InnovationFinDashBoard.view.DimensionItem4',{id:'dimensionitem4',hidden:'true'});
-var cc5=Ext.create('InnovationFinDashBoard.view.DimensionItem5',{id:'dimensionitem5',hidden:'true'});
-var cc11=Ext.create('InnovationFinDashBoard.view.DimensionItem1',{id:'dimensionitem11',hidden:'true'});
-var cc22=Ext.create('InnovationFinDashBoard.view.DimensionItem2',{id:'dimensionitem22',hidden:'true'});
-var cc33=Ext.create('InnovationFinDashBoard.view.DimensionItem3',{id:'dimensionitem33',hidden:'true'});
-var cc44=Ext.create('InnovationFinDashBoard.view.DimensionItem4',{id:'dimensionitem44'});
-var cc55=Ext.create('InnovationFinDashBoard.view.DimensionItem5',{id:'dimensionitem55'});
 Ext.define('InnovationFinDashBoard.view.ChartView', {
     extend : 'Ext.Panel',
     xtype : 'chartview',
@@ -45,7 +35,17 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
                     align:'center',
                     pack:'left'
                 },
-                items:[cc1,cc2,cc3,cc4,cc5]
+                items:[{
+                    xtype:'dimensionitem1',id:'dimensionitem1'
+                },{
+                    xtype:'dimensionitem2',id:'dimensionitem2'
+                },{
+                    xtype:'dimensionitem3',id:'dimensionitem3'
+                },{
+                    xtype:'dimensionitem4',id:'dimensionitem4',hidden:true
+                },{
+                    xtype:'dimensionitem5',id:'dimensionitem5',hidden:true
+                }]
             },{
                 xtype : 'toolbar',
                 id:'toolbartop',
@@ -139,7 +139,17 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
                     align:'center',
                     pack:'left'
             },
-            items:[cc11,cc22,cc33,cc44,cc55]
+            items:[{
+                xtype:'dimensionitem1',id:'dimensionitem11',hidden:true
+            },{
+                xtype:'dimensionitem2',id:'dimensionitem22',hidden:true
+            },{
+                xtype:'dimensionitem3',id:'dimensionitem33',hidden:true
+            },{
+                xtype:'dimensionitem4',id:'dimensionitem44'
+            },{
+                xtype:'dimensionitem5',id:'dimensionitem55'
+            }]
 
         },{
 //            flex:3,

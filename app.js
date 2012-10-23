@@ -26,7 +26,8 @@ Ext.application({
     ],
 
     controllers:[
-        'ChartViewController'
+        'ChartViewController',
+        'Main'
     ],
 
     stores:[
@@ -36,10 +37,6 @@ Ext.application({
     models:[
         'DimensionModel'
     ],
-
-
-
-
 
     icon: {
         '57': 'resources/icons/Icon.png',

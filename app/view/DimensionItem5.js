@@ -18,45 +18,42 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem5", {
         layout: {
             type:'vbox',
             align:'center',
-            pack:'center'
+            pack:'start'
         },
+        height: 100,
         defaults:{
-            width: 150,
-            height: 25
+            width: 150
         },
-        style:'border:1px black solid',
         items: [
             {
                 xtype: 'button',
-//                flex: 1,
-                docked:'bottom',
-                itemId: 'removeButton',
-                text:'Remove',
-                //action: 'removeThisTile',
-                ui: 'decline',
-                hidden: true,
-                handler: this.removeButtonTap,
-                scope: this
-            },
-            {
-                xtype: 'panel',
-                id:'context',
-                html:"Option",
-                style:{"text-align":"center","padding-top":"5%"},
-//                height:40
-                flex: 3
-
-            },
-            {
-                xtype: 'button',
-//                flex: 1,
+                flex: 1,
                 docked:'top',
                 text: 'Add',
                 itemId: 'addButton',
                 //action: 'addThisTile',
                 ui: 'confirm',
                 hidden: true,
-                handler: this.addButtonTap,
+                action:'addbutton',
+                scope: this
+            },
+            {
+                xtype: 'panel',
+                flex: 5,
+                id:'context',
+                html:"Option",
+                style:{"text-align":"center","padding-top":"5%"}
+            },
+            {
+                xtype: 'button',
+                flex: 1,
+                docked:'bottom',
+                itemId: 'removeButton',
+                text:'Remove',
+                //action: 'removeThisTile',
+                ui: 'decline',
+                hidden: true,
+                action:'removebutton',
                 scope: this
             }
         ]
