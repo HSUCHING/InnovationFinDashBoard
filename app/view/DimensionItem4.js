@@ -40,9 +40,16 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem4", {
             {
                 xtype: 'panel',
                 id:'context',
-                html:"product",
+                html:"Product",
+                layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
-//                height:40
+                items:[{
+                    xtype:'image',
+                    width:60,
+                    height:60,
+                    mode:'img',
+                    src:'resources/icons/dimension/Product.png'
+                }],
                 flex: 5
 
             },

@@ -29,11 +29,16 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
 ////                        y : 5
 ////                    }
 //                },
+
                 height:'100%',
                 layout:{
                     type:'hbox',
                     align:'center',
                     pack:'left'
+                },
+                defaults:{
+                    draggable:true,
+                    constrain: true
                 },
                 items:[{
                     xtype:'dimensionitem1',id:'dimensionitem1'
@@ -154,7 +159,21 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
         },{
 //            flex:3,
             xtype:'panel',
-            html:'bbb'
+            height:600,
+            layout:{
+                type:'hbox',
+                align:'stretch',
+                pack:'center'
+            },
+            items:[{
+                flex:1,
+                id:'leftmap',
+                xtype:'panel'
+            },{
+                flex:1,
+                id:'rightchart',
+                xtype:'panel'
+            }]
         }
         ]
     }

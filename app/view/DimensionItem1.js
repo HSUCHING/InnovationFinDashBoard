@@ -42,7 +42,21 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem1", {
                 xtype: 'panel',
                 id:'context',
                 html:"Country",
+                layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
+                items:[{
+                    xtype:'image',
+                    width:60,
+                    height:60,
+                    mode:'img',
+                    src:'resources/icons/dimension/Area.png',
+                    layout:'fit',
+                    listeners:{
+                        tap:function(){
+                            Ext.getCmp('leftmap').add({xtype:'mapPanel'});
+                        }
+                    }
+                }],
                 flex: 5
             },
             {

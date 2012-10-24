@@ -39,10 +39,18 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem5", {
             },
             {
                 xtype: 'panel',
-                flex: 5,
                 id:'context',
                 html:"Option",
-                style:{"text-align":"center","padding-top":"5%"}
+                layout:{type:'vbox',align:'center',pack:'center'},
+                style:{"text-align":"center","padding-top":"5%"},
+                items:[{
+                    xtype:'image',
+                    width:60,
+                    height:60,
+                    mode:'img',
+                    src:'resources/icons/dimension/Others.png'
+                }],
+                flex: 5
             },
             {
                 xtype: 'button',

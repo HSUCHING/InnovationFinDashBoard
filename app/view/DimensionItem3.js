@@ -41,9 +41,16 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem3", {
             {
                 xtype: 'panel',
                 id:'context',
-                html:"Code",
+                html:"Company Code",
+                layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
-//                height:40
+                items:[{
+                    xtype:'image',
+                    width:60,
+                    height:60,
+                    mode:'img',
+                    src:'resources/icons/dimension/Companycode.png'
+                }],
                 flex: 5
 
             },

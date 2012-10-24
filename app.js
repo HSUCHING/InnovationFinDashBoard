@@ -22,7 +22,8 @@ Ext.application({
             'DimensionItem2',
             'DimensionItem3',
             'DimensionItem4',
-            'DimensionItem5'
+            'DimensionItem5',
+            'MapPanel'
     ],
 
     controllers:[
