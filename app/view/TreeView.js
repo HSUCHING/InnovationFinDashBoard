@@ -12,9 +12,24 @@ Ext.define("InnovationFinDashBoard.view.TreeView",{
 
     config:{
         id:'treeview',
+        layout:{
+            type:'vbox',
+            align:"stretch",
+            pack:"center"
+        },
         items:[{
+            xtype:'toolbar',
+            docked:'top',
+            items:[{
+                xtype:'button',
+                text:'View Tree',
+                width:200,
+                action:'poptree'
+            }]
+        },{
             xtype:'panel',
-            html:'dsadsa'
+            id:'paneltreeview',
+            flex:1
         }]
 
 
