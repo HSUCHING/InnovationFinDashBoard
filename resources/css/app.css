@@ -9819,3 +9819,34 @@ input[type="search"]::-webkit-search-cancel-button {
     border-bottom-right-radius: 10px;
     background: -webkit-linear-gradient(right,#FFf000,#FFFFFF);
 }
+
+
+.haschildrencircle{
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: #470759;
+    -webkit-border-radius: 15px;
+    margin-top: -3px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.hasnochildrencircle{
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: #FF00FF;
+    -webkit-border-radius: 15px;
+    margin-top: -3px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom: 20px;
+}
+
+
+
+.detail{
+    margin-bottom: 5px;
+    text-align: center;
+}

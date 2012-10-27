@@ -13,13 +13,18 @@ Ext.define("InnovationFinDashBoard.view.TreeView",{
     config:{
         id:'treeview',
         layout:{
-            type:'vbox',
+            type:'hbox',
             align:"stretch",
-            pack:"center"
+            pack:"justify"
         },
         items:[{
             xtype:'toolbar',
             docked:'top',
+            layout:{
+                type:'hbox',
+                align:'middle',
+                pack:'center'
+            },
             items:[{
                 xtype:'button',
                 text:'View Tree',
@@ -29,7 +34,41 @@ Ext.define("InnovationFinDashBoard.view.TreeView",{
         },{
             xtype:'panel',
             id:'paneltreeview',
-            flex:1
+            docked:'left'
+        },{
+            xtype:'panel',
+            id:'treeDetail',
+            style:'border:1px white solid',
+//            hidden:true,
+            docked:'right',
+            width:400,
+            layout:{
+                type:'vbox',
+                align:'stretch',
+                pack:'start'
+            },
+            items:[{
+                xtype:'toolbar',
+                style:{"font-size":"15px"},
+                title:'Tree Detail',
+                height:40,
+                docked:'top'
+            },{
+                xtype:'panel',
+                height:10
+            },{
+                xtype:'panel',
+                html:'<div class="haschildrencircle"></div>Collapsable Node'
+            },{
+                xtype:'panel',
+                height:20
+            },{
+                xtype:'panel',
+                html:'<div class="hasnochildrencircle"></div>No collapsable Node'
+            },{
+                xtype:'panel',
+                id:'shownodedetail'
+            }]
         }]
 
 

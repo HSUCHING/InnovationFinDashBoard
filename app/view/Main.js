@@ -44,15 +44,20 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     listeners:{
                         tap:function(img,ev){
 //                            Ext.Msg.alert(img.id);
-                            var tabview=new InnovationFinDashBoard.view.TabViewShow();
+//                            var tabview=new InnovationFinDashBoard.view.TabViewShow();
+//                            Ext.getCmp('myPanel').push(
+////                                title:'Second',
+////                                html:'Second view!'
+//                                tabview
+////                                {
+////                                    xtype:'tabViewShow',
+////                                    id:'tabPanel'
+////                                }
+//                            )
+
+                            var treeview=new InnovationFinDashBoard.view.TreeView();
                             Ext.getCmp('myPanel').push(
-//                                title:'Second',
-//                                html:'Second view!'
-                                tabview
-//                                {
-//                                    xtype:'tabViewShow',
-//                                    id:'tabPanel'
-//                                }
+                                treeview
                             )
                         }
                     }

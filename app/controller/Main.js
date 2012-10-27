@@ -93,6 +93,7 @@ Ext.define("InnovationFinDashBoard.controller.Main",{
         },
 
         poptreeview:function(button,event){
+
             var margin = {top: 20, right: 120, bottom: 20, left: 120},
                 width = 1280 - margin.right - margin.left,
                 height = 800 - margin.top - margin.bottom,
@@ -133,7 +134,7 @@ Ext.define("InnovationFinDashBoard.controller.Main",{
                     }
                 }
 
-                root.children.forEach(collapse);
+//                root.children.forEach(collapse);
                 update(root);
             });
 
@@ -154,6 +155,10 @@ Ext.define("InnovationFinDashBoard.controller.Main",{
                     .attr("class", "node")
                     .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
                     .on("click", click);
+
+
+                node.on("mouseover", clickShowDetail);
+
 
                 nodeEnter.append("circle")
                     .attr("r", 1e-6)
@@ -232,8 +237,24 @@ Ext.define("InnovationFinDashBoard.controller.Main",{
                     d.children = d._children;
                     d._children = null;
                 }
+
                 update(d);
+                if(!(d.children|| d._children)){ naviTo(d);}
+
             }
+
+
+            function naviTo(d) {
+                var tabview=new InnovationFinDashBoard.view.TabViewShow({dupontComponent:d.name});
+                Ext.getCmp('myPanel').push(
+                    tabview
+                )
+            }
+
+            function clickShowDetail(d) {
+                Ext.getCmp('shownodedetail').setHtml("<div class=\"detail\">Select Node:"+ d.name+"</div>"+"<div class=\"detail\">Target Value:"+ d.size+"</div>"+"<div class=\"detail\">Actual Value:"+ d.size+"</div>");
+            }
+
         }
 
 
