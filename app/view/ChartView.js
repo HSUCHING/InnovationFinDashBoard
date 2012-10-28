@@ -129,7 +129,7 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
         },{
 //            flex:1,
             xtype:'panel',
-//            hidden:true,
+            hidden:true,
             id: 'dimensionbar2',
 //                scrollable : {
 //                    direction : 'horizontal'

@@ -14,7 +14,8 @@ Ext.define("InnovationFinDashBoard.view.TableDataView",{
         store: {
             fields: ['name', 'age'],
             data: [
-                {name: 'Jamie',  age: 100}
+                {name: 'Jamie',  age: 100},
+                {name: 'Heloo',  age: 100}
             ]
         },
 //        itemTpl: '<div>{name} is {age} years old</div>',
@@ -22,7 +23,7 @@ Ext.define("InnovationFinDashBoard.view.TableDataView",{
         itemTpl:new Ext.XTemplate('<table id="tableshow">',
             '<thead>',
             '<tr>',
-                '<th class="theadsidetitle left">&nbsp;</th>',
+                '<th class="theadsidetitle left">{data[0]}</th>',
                 '<th class="theadside">Area</th>',
                 '<th class="theadside">Code</th>',
                 '<th class="theadside">Company</th>',

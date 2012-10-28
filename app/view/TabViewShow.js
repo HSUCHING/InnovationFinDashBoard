@@ -13,6 +13,7 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
         id:'tabPanel',
         ui:'dark',
         tabBarPosition:'bottom',
+
         fullscreen:true,
 //            activeItem:1,
         layout:{animation:{type:'flip',direction:'right',duration:1000}},
@@ -39,18 +40,15 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
                 console.log(oldValue);
                 console.log(newValue);
                 newValue.addCls('colorRed');
-                console.log(item.getActiveItem().title);
-                if(newValue.title=='Chart View'){
-                    console.log("hhh");
-                }
 
-                return true;
             },
             painted:function(item){
                 Ext.Msg.alert("Hello");
 //                    var it=item.getItems();
 //                    item.getItems().items[0].addCls('colorRed');
                 console.log(item.getActiveItem().title);
+                item.getActiveItem().context=this.dupontComponent;
+                return true;
 
             }
         }

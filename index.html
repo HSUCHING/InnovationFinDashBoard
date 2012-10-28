@@ -109,7 +109,7 @@
             return elm.className;
         }
 
-        function activateThisColumn(column) {
+        function activateThisColumn(column,selected) {
             var table = document.getElementById('tableshow');
 
             // first, remove the 'on' class from all other th's
@@ -124,7 +124,15 @@
 
 
             // now, add the class 'on' to the selected th
-            var newths = getElementsByClassName(column, 'tr', table);
+//            var newths = getElementsByClassName(column, 'tr', table);
+//            for (var h=0; h<newths.length; h++) {
+//                addClassName(newths[h], 'on');
+//            }
+            var newths=[];
+            newths.push(selected);
+            for(var i=0;i<selected.children.length;i++){
+                newths.push(selected.children[i]);
+            }
             for (var h=0; h<newths.length; h++) {
                 addClassName(newths[h], 'on');
             }
