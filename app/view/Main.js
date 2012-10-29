@@ -37,8 +37,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     fullscreen:true
                 },
                 defaults:{
-                    width:200,
-                    height:150,
+                    width:150,
+                    height:100,
                     mode:'img',
                     cls:'imgborder',
                     listeners:{
@@ -69,10 +69,10 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     id:'dupont',
                     html:'Dupont',
                     src:'resources/images/dupont.jpg'
-                },{width:250},{
+                },{width:150},{
                     xtype:'image',
                     src:'resources/images/Data_analysis.jpg'
-                },{width:250},{
+                },{width:150},{
                     xtype:'image',
                     src:'resources/images/IDEA.jpg'
                 }]
@@ -87,8 +87,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     fullscreen:true
                 },
                 defaults:{
-                    width:200,
-                    height:150,
+                    width:150,
+                    height:100,
                     mode:'img',
                     listeners:{
                         tap:function(img,ev){
@@ -105,11 +105,11 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     xtype:'image',
                     src:'resources/images/FICOADD01.png',
                     flex: 1
-                },{width:250},{
+                },{width:150},{
                     xtype:'image',
                     src:'resources/images/FICOADD02.jpg',
                     flex: 1
-                },{width:250},{
+                },{width:150},{
                     xtype:'image',
                     src:'resources/images/FICOADD03.jpg',
                     flex: 1
@@ -125,8 +125,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     fullscreen:true
                 },
                 defaults:{
-                    width:200,
-                    height:150,
+                    width:150,
+                    height:100,
                     mode:'img',
                     listeners:{
                         tap:function(img,ev){
@@ -143,11 +143,11 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     xtype:'image',
                     src:'resources/images/FICOADD04.jpg',
                     flex: 1
-                },{width:250},{
+                },{width:150},{
                     xtype:'image',
                     src:'resources/images/FICOADD05.gif',
                     flex: 1
-                },{width:250},{
+                },{width:150},{
                     xtype:'image',
                     src:'resources/images/FICOADD06.jpg',
                     flex: 1

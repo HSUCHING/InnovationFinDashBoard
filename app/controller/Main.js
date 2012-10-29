@@ -163,12 +163,16 @@ Ext.define("InnovationFinDashBoard.controller.Main",{
                 nodeEnter.append("circle")
                     .attr("r", 1e-6)
                     .style("fill", function(d) { return d._children ? "#470759" : "magenta"; });
+//                nodeEnter.append("svg:rect")
+//                    .attr("class","box").attr("x",-100).attr("y",-10).attr("width",100).attr("height",50)
+//                    .style("fill", function(d) { return d._children ? "#470759" : "magenta"; });
+
 
                 nodeEnter.append("text")
                     .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
                     .attr("dy", ".35em")
                     .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-                    .text(function(d) { return d.name; })
+                    .text(function(d) { return d.name + "  "+d.size; })
                     .style("fill-opacity", 1e-6);
 
                 // Transition nodes to their new position.
@@ -240,6 +244,7 @@ Ext.define("InnovationFinDashBoard.controller.Main",{
 
                 update(d);
                 if(!(d.children|| d._children)){ naviTo(d);}
+//                naviTo(d);
 
             }
 
