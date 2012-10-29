@@ -13,9 +13,9 @@ Ext.define("InnovationFinDashBoard.view.TreeView",{
     config:{
         id:'treeview',
         layout:{
-            type:'hbox',
-            align:"stretch",
-            pack:"justify"
+            type:'hbox'
+//            align:"stretch",
+//            pack:"justify"
         },
         items:[{
             xtype:'toolbar',
@@ -34,7 +34,8 @@ Ext.define("InnovationFinDashBoard.view.TreeView",{
         },{
             xtype:'panel',
             id:'paneltreeview',
-            docked:'left'
+            style:'margin-left:200px',
+            height:200
         },{
             xtype:'panel',
             id:'treeDetail',

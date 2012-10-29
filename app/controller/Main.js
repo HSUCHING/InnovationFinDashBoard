@@ -95,8 +95,8 @@ Ext.define("InnovationFinDashBoard.controller.Main",{
         poptreeview:function(button,event){
 
             var margin = {top: 20, right: 120, bottom: 20, left: 120},
-                width = 1280 - margin.right - margin.left,
-                height = 800 - margin.top - margin.bottom,
+                width = 1080 - margin.right - margin.left,
+                height = 600 - margin.top - margin.bottom,
                 i = 0,
                 duration = 500,
                 root;
@@ -172,7 +172,7 @@ Ext.define("InnovationFinDashBoard.controller.Main",{
                     .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
                     .attr("dy", ".35em")
                     .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-                    .text(function(d) { return d.name + "  "+d.size; })
+                    .text(function(d) { return d.name; })
                     .style("fill-opacity", 1e-6);
 
                 // Transition nodes to their new position.
