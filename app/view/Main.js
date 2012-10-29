@@ -55,7 +55,9 @@ Ext.define("InnovationFinDashBoard.view.Main", {
 ////                                }
 //                            )
 
-                            var treeview=new InnovationFinDashBoard.view.TreeView();
+                            Ext.Msg.alert(img.id);
+
+                            var treeview=new InnovationFinDashBoard.view.TreeView({"appName":img.id});
                             Ext.getCmp('myPanel').push(
                                 treeview
                             )
@@ -101,15 +103,15 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                 },
                 items:[{
                     xtype:'image',
-                    src:'resources/images/dupont.jpg',
+                    src:'resources/images/FICOADD01.png',
                     flex: 1
                 },{width:250},{
                     xtype:'image',
-                    src:'resources/images/Data_analysis.jpg',
+                    src:'resources/images/FICOADD02.jpg',
                     flex: 1
                 },{width:250},{
                     xtype:'image',
-                    src:'resources/images/IDEA.jpg',
+                    src:'resources/images/FICOADD03.jpg',
                     flex: 1
                 }]
             },{
@@ -139,15 +141,15 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                 },
                 items:[{
                     xtype:'image',
-                    src:'resources/images/dupont.jpg',
+                    src:'resources/images/FICOADD04.jpg',
                     flex: 1
                 },{width:250},{
                     xtype:'image',
-                    src:'resources/images/Data_analysis.jpg',
+                    src:'resources/images/FICOADD05.gif',
                     flex: 1
                 },{width:250},{
                     xtype:'image',
-                    src:'resources/images/IDEA.jpg',
+                    src:'resources/images/FICOADD06.jpg',
                     flex: 1
                 }]
             }]
