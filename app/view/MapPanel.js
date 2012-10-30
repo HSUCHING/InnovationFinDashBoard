@@ -10,26 +10,28 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
     extend: 'Ext.Panel',
     xtype: 'mapPanel',
 
-    config:{
+    config: {
 
-        style:'border:2px black solid',
-        items: [
-        {
+        style: 'border:2px black solid',
+        items: [{
             xtype: "map",
-            id:'map',
-            width:'100%',
-            height:600,
-            style:{"text-align":"center","color":"black"},
+            id: 'map',
+            width: '100%',
+            height: 600,
+            style: {
+                "text-align": "center",
+                "color": "black"
+            },
             //                    useCurrentLocation:true
-            mapOptions : {
-                center : new google.maps.LatLng(30.66,104.06),
+            mapOptions: {
+                center: new google.maps.LatLng(30.66, 104.06),
                 zoom: 5
-//                        navigationControlOptions: {
-//                            style: google.maps.NavigationControlStyle.DEFAULT
-//                        }
+                //                        navigationControlOptions: {
+                //                            style: google.maps.NavigationControlStyle.DEFAULT
+                //                        }
             },
             listeners: {
-                maprender : function(comp, map){
+                maprender: function(comp, map) {
 
                     var infowindowsh = new google.maps.InfoWindow({
                         content: '上海'
@@ -40,61 +42,63 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
 
                     //latlng
                     var latlngSh = new google.maps.LatLng(
-                    //            纬度
-                    //            coords.latitude,
-                        31.23,
-                        121.47
-                    //            经度
-                    //            coords.longitude
+                        //            纬度
+                        //            coords.latitude,
+                        31.23, 121.47
+                        //            经度
+                        //            coords.longitude
                     );
 
                     var latlngBj = new google.maps.LatLng(
-                    //            纬度
-                    //            coords.latitude,
-                        39.90,
-                        116.40
-                    //            经度
-                    //            coords.longitude
+                        //            纬度
+                        //            coords.latitude,
+                        39.90, 116.40
+                        //            经度
+                        //            coords.longitude
                     );
-
 
                     var marker1 = new google.maps.Marker({
                         position: latlngSh,
-                        title : 'Shanghai',
+                        title: 'Shanghai',
                         map: map
                     });
                     var marker2 = new google.maps.Marker({
                         position: latlngBj,
-                        title : 'Beijing',
+                        title: 'Beijing',
                         map: map
                     });
 
-//                            infowindow.open(map, marker);
-                    var renderChart=function(marker){
-//                                infowindow.open(map, marker1);
-
-                        switch(marker.title){
-                            case "Shanghai":{
+                    //                            infowindow.open(map, marker);
+                    var renderChart = function(marker) {
+                        //                                infowindow.open(map, marker1);
+                        switch (marker.title) {
+                            case "Shanghai":
+                            {
                                 infowindowsh.open(map, marker);
                                 break;
                             }
-                            case "Beijing":{
+                            case "Beijing":
+                            {
                                 infowindowbj.open(map, marker);
                                 break;
                             }
-                            default :{
+                            default:
+                            {
                                 break;
                             }
                         }
 
-
-
                     };
-                    google.maps.event.addListener(marker1, 'click', function(event){renderChart(marker1)});
-                    google.maps.event.addListener(marker2, 'click', function(event){renderChart(marker2)});
+                    google.maps.event.addListener(marker1, 'click',
+                        function(event) {
+                            renderChart(marker1)
+                        });
+                    google.maps.event.addListener(marker2, 'click',
+                        function(event) {
+                            renderChart(marker2)
+                        });
                 }
             }
-        }
-    ]}
+        }]
+    }
 })
-

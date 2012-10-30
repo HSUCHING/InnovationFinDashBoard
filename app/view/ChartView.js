@@ -10,7 +10,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
     xtype : 'chartview',
     id:'chartView',
     config : {
-//        cls : 'componentBorder',
         layout:{
             type:'vbox',
             align:'stretch'
@@ -172,7 +171,7 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
             },{
                 flex:1,
                 id:'rightchart',
-                xtype:'panel'
+                xtype:'chartpanel'
             }]
         }
         ]

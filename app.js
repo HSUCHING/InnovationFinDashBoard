@@ -9,7 +9,10 @@ Ext.application({
         'Ext.field.Spinner',
         'Ext.DataView',
         'Ext.data.Store',
-        'Ext.data.Model'
+        'Ext.data.JsonStore',
+        'Ext.data.Model',
+        'Ext.chart.Chart',
+        'Ext.chart.series.Series'
     ],
 
     views: ['Main',
@@ -23,20 +26,26 @@ Ext.application({
             'DimensionItem3',
             'DimensionItem4',
             'DimensionItem5',
-            'MapPanel'
+            'MapPanel',
+            'ChartPanel',
+            'BarChart'
+
     ],
 
     controllers:[
         'ChartViewController',
-        'Main'
+        'Main',
+        'TreeController'
     ],
 
     stores:[
-        'DimensionStore'
+        'DimensionStore',
+        'ChartStore'
     ],
 
     models:[
-        'DimensionModel'
+        'DimensionModel',
+        'ChartStore'
     ],
 
     icon: {

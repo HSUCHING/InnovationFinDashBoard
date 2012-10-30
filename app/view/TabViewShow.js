@@ -43,11 +43,12 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
 
             },
             painted:function(item){
-                Ext.Msg.alert("Hello");
+//                Ext.Msg.alert("Hello");
 //                    var it=item.getItems();
 //                    item.getItems().items[0].addCls('colorRed');
                 console.log(item.getActiveItem().title);
                 item.getActiveItem().context=this.dupontComponent;
+                console.log(this.dupontComponent);
                 return true;
 
             }
