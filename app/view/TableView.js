@@ -32,6 +32,7 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
 //                        console.log(this.parent.parent.context);
                         Ext.Ajax.request({
                             url:'resources/json/table.json',
+//                            url:'http://localhost:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+this.parent.parent.context,
                             success:function(response,opts){
 //                                var obj=Ext.decode(response.responseText);
 //                                console.log(obj);
@@ -45,7 +46,7 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                                     '<th class="theadside">{field1}</th>',
                                     '<th class="theadside">{field2}</th>',
                                     '<th class="theadside">{field3}</th>',
-                                    '<th class="theadside">{field4}</th>',
+//                                    '<th class="theadside">{field4}</th>',
                                     '<th class="theadside right">{value}</th>',
                                     '</tr>',
                                     '</thead>',
@@ -53,11 +54,11 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                                     '<tpl for="items">',
                                         '<tr class="choice" onclick="activateThisColumn(\'choice\',this)">',
                                         '<th class="left">{#}</th>',
-                                        '<th>{field1Value}</th>',
-                                        '<th>{field2Value}</th>',
-                                        '<th>{field3Value}</th>',
-                                        '<th>{field4Value}</th>',
-                                        '<th class="right">{value}</th>',
+                                        '<th><tpl if="field1Value!=&quot;&quot;">{field1Value}</tpl><tpl if="field1Value==&quot;&quot;">NULL</tpl></th>',
+                                        '<th><tpl if="field2Value!=&quot;&quot;">{field2Value}</tpl><tpl if="field2Value==&quot;&quot;">NULL</tpl></th>',
+                                        '<th><tpl if="field3Value!=&quot;&quot;">{field3Value}</tpl><tpl if="field3Value==&quot;&quot;">NULL</tpl></th>',
+//                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
+                                        '<th class="right"><tpl if="value!=&quot;&quot;">{value}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
                                         '</tr>',
                                     '</tpl>',
                                     '</tbody>',

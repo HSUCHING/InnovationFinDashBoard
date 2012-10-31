@@ -35,7 +35,10 @@ Ext.application({
     controllers:[
         'ChartViewController',
         'Main',
-        'TreeController'
+        'NaviController',
+        'TreeController',
+        'TableController',
+        'TabController'
     ],
 
     stores:[

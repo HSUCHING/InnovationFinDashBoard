@@ -11,6 +11,12 @@ Ext.define('InnovationFinDashBoard.view.ChartPanel', {
 
     config:{
         layout:'card',
+        tabBar:{
+            docked:'top',
+            layout:{
+                pack:'center'
+            }
+        },
         ui: 'light',
         cardSwitchAnimation: {
             type: 'slide'

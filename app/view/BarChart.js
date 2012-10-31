@@ -31,16 +31,17 @@ Ext.define('InnovationFinDashBoard.view.BarChart', {
                 portrait: 'bottom',
                 landscape: 'right'
             },
-            labelFont: '17px Arial'
+            labelFont: '11px Arial'
         },
 
         axes: [
             {
                 type: 'Numeric',
-                position: 'bottom',
+                position: 'left',
                 label: {
 //                    text:'Text',
-                    font: '10px Arial'
+                    font: '11px Arial',
+                    fill:'yellow'
                 },
                 adjustMinimumByMajorUnit: 0,
                 fields: ['CompanyA', 'CompanyB', 'CompanyC', 'CompanyD'],
@@ -49,10 +50,11 @@ Ext.define('InnovationFinDashBoard.view.BarChart', {
             },
             {
                 type: 'Category',
-                position: 'left',
+                position: 'bottom',
                 fields: ['Qua'],
                 label:{
-                    font: '10px Arial'
+                    font: '15px Arial',
+                    fill:'yellow'
                 },
                 title: 'Quarter'
             }
@@ -62,10 +64,10 @@ Ext.define('InnovationFinDashBoard.view.BarChart', {
         },
         series: [
             {
-                type: 'bar',
+                type: 'column',
                 xField: 'Qua',
                 yField: ['CompanyA', 'CompanyB', 'CompanyC', 'CompanyD'],
-                axis: 'bottom',
+                axis: 'left',
                 highlight: true,
                 title: ['CompanyA', 'CompanyB', 'CompanyC', 'CompanyD'],
                 showInLegend: true

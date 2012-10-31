@@ -9697,6 +9697,19 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
 
+/*chart*/
+.x-legend{
+    z-index:10;
+    border:1px solid black;
+    background:#111111;
+    overflow:hidden;
+    position:absolute;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow:rgba(255, 255, 255, 0.2) 0 1px 0;
+    box-shadow:rgba(255, 255, 255, 0.2) 0 1px 0
+}
+
 
 /*Personal*/
 
@@ -9755,10 +9768,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 #tableshow th.left{
     width:180px;
+    text-align: center;
 }
 
 #tableshow th.right{
     width:180px;
+    text-align: center;
 }
 
 #tableshow thead th.left{

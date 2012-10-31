@@ -13,6 +13,7 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
         id:'tabPanel',
         ui:'dark',
         tabBarPosition:'bottom',
+//        autoDestory:true,
 
         fullscreen:true,
 //            activeItem:1,
