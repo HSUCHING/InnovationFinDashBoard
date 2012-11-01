@@ -100,7 +100,7 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
             var nodeEnter = node.enter().append("g").attr("class", "node").attr("transform",
                 function(d) {
                     return "translate(" + source.y0 + "," + source.x0 + ")";
-                }).on("click",click);
+                }).on("mouseover",mouseover).on("click",click).on("mouseout",blur);
 
 //            node.on("mouseover", click2);
 
@@ -120,7 +120,7 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                     return d.children || d._children ? "end": "start";
                 }).text(function(d) {
                     return d.name;
-                }).style("fill-opacity", 1e-6);
+                }).style("fill-opacity", 1e-6).style("fill","yellow");
 
             nodeEnter.append("text").attr("x",
                 function(d) {
@@ -130,7 +130,7 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                     return d.children || d._children ? "end": "start";
                 }).text(function(d) {
                     return d.size;
-                }).style("fill-opacity", 1);
+                }).style("fill-opacity", 1e-6).style("fill","red");
 
 
 
@@ -221,14 +221,18 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
             var tabview = new InnovationFinDashBoard.view.TabViewShow({
                 dupontComponent: d.name
             });
-            if(d.name!="+"&&d.name!="+"&&d.name!="*"&&d.name!="/"){
+            if(d.name!="+"&&d.name!="-"&&d.name!="*"&&d.name!="/"){
                 Ext.getCmp('myPanel').push(
                     tabview)
             }
         }
 
-        function click2(d){
-            console.log(d);
+        function mouseover(d){
+            this.lastChild.style.fillOpacity=1;
+        }
+
+        function blur(d){
+            this.lastChild.style.fillOpacity=1e-6;
         }
 
         function clickShowDetail(d) {

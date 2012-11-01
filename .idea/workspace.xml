@@ -2,94 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da18f0ef-eab9-4956-bb9a-e8d3e18c1f5d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/NaviController.js" afterPath="$PROJECT_DIR$/app/controller/NaviController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ChartPanel.js" afterPath="$PROJECT_DIR$/app/view/ChartPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ChartView.js" afterPath="$PROJECT_DIR$/app/view/ChartView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapPanel.js" afterPath="$PROJECT_DIR$/app/view/MapPanel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/TabViewShow.js" afterPath="$PROJECT_DIR$/app/view/TabViewShow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/TableView.js" afterPath="$PROJECT_DIR$/app/view/TableView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/TreeView.js" afterPath="$PROJECT_DIR$/app/view/TreeView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/d3.v2.js" afterPath="$PROJECT_DIR$/resources/js/d3.v2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/json/tree/flare.json" afterPath="$PROJECT_DIR$/resources/json/tree/flare.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/app.scss" afterPath="$PROJECT_DIR$/resources/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/sass/config.rb" afterPath="$PROJECT_DIR$/resources/sass/config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Callout.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Callout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Chart.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Highlight.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Highlight.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Label.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Label.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Legend.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Legend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Panel.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Panel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Shape.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Shape.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Spark.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Spark.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Toolbar.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Toolbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/Transformable.js" afterPath="$PROJECT_DIR$/sdk/src/chart/Transformable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/axis/Abstract.js" afterPath="$PROJECT_DIR$/sdk/src/chart/axis/Abstract.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/axis/Axis.js" afterPath="$PROJECT_DIR$/sdk/src/chart/axis/Axis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/axis/Category.js" afterPath="$PROJECT_DIR$/sdk/src/chart/axis/Category.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/axis/Gauge.js" afterPath="$PROJECT_DIR$/sdk/src/chart/axis/Gauge.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/axis/Numeric.js" afterPath="$PROJECT_DIR$/sdk/src/chart/axis/Numeric.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/axis/Radial.js" afterPath="$PROJECT_DIR$/sdk/src/chart/axis/Radial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/axis/Time.js" afterPath="$PROJECT_DIR$/sdk/src/chart/axis/Time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/chart-flow.graffle" afterPath="$PROJECT_DIR$/sdk/src/chart/chart-flow.graffle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/Abstract.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/Abstract.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/DelayedSync.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/DelayedSync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/ItemCompare.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/ItemCompare.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/ItemHighlight.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/ItemHighlight.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/ItemInfo.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/ItemInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/Manager.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/Manager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/PanZoom.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/PanZoom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/PieGrouping.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/PieGrouping.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/Reset.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/Reset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/Rotate.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/Rotate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/interactions/ToggleStacked.js" afterPath="$PROJECT_DIR$/sdk/src/chart/interactions/ToggleStacked.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/legend/View.js" afterPath="$PROJECT_DIR$/sdk/src/chart/legend/View.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/AbstractRadial.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/AbstractRadial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/AbstractSpaceFilling.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/AbstractSpaceFilling.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Area.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Area.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Bar.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Bar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Cartesian.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Cartesian.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Column.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Column.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Gauge.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Gauge.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Icicle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Icicle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/ItemEvents.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/ItemEvents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Line.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Pie.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Radar.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Radar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Scatter.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Scatter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Series.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Series.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Sunburst.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Sunburst.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Treemap.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Treemap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/series/Wordmap.js" afterPath="$PROJECT_DIR$/sdk/src/chart/series/Wordmap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/Base.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/Base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/CalloutStyle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/CalloutStyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/EvenStyle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/EvenStyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/GridStyle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/GridStyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/HighlightStyle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/HighlightStyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/LabelStyle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/LabelStyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/MarkerStyle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/MarkerStyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/OddStyle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/OddStyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/Style.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/Style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/Theme.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/Theme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/chart/theme/TitleStyle.js" afterPath="$PROJECT_DIR$/sdk/src/chart/theme/TitleStyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/Color.js" afterPath="$PROJECT_DIR$/sdk/src/draw/Color.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/Component.js" afterPath="$PROJECT_DIR$/sdk/src/draw/Component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/CompositeSprite.js" afterPath="$PROJECT_DIR$/sdk/src/draw/CompositeSprite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/Draw.js" afterPath="$PROJECT_DIR$/sdk/src/draw/Draw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/Matrix.js" afterPath="$PROJECT_DIR$/sdk/src/draw/Matrix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/Sprite.js" afterPath="$PROJECT_DIR$/sdk/src/draw/Sprite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/Surface.js" afterPath="$PROJECT_DIR$/sdk/src/draw/Surface.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/engine/Canvas.js" afterPath="$PROJECT_DIR$/sdk/src/draw/engine/Canvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/engine/ImageExporter.js" afterPath="$PROJECT_DIR$/sdk/src/draw/engine/ImageExporter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/draw/engine/SvgExporter.js" afterPath="$PROJECT_DIR$/sdk/src/draw/engine/SvgExporter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/fx/Abstract.js" afterPath="$PROJECT_DIR$/sdk/src/fx/Abstract.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/fx/Frame.js" afterPath="$PROJECT_DIR$/sdk/src/fx/Frame.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/fx/Parser.js" afterPath="$PROJECT_DIR$/sdk/src/fx/Parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/fx/Queue.js" afterPath="$PROJECT_DIR$/sdk/src/fx/Queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/fx/Sprite.js" afterPath="$PROJECT_DIR$/sdk/src/fx/Sprite.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/src/fx/TimingFunctions.js" afterPath="$PROJECT_DIR$/sdk/src/fx/TimingFunctions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/touch-charts-debug.js" afterPath="$PROJECT_DIR$/sdk/touch-charts-debug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdk/touch-charts.js" afterPath="$PROJECT_DIR$/sdk/touch-charts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="InnovationFinDashBoard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -112,7 +27,7 @@
       <file leaf-file-name="TreeView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/TreeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="28" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+            <state line="20" column="25" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,19 +36,8 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="25" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+            <state line="22" column="25" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TabController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/TabController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#160#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -141,10 +45,19 @@
       <file leaf-file-name="NaviController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/NaviController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="70" selection-start="3893" selection-end="3893" vertical-scroll-proportion="0.3824131">
+            <state line="223" column="10" selection-start="7521" selection-end="7521" vertical-scroll-proportion="0.3167702">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="-13.4838705">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,7 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/view/ChartView.js" />
         <option value="$PROJECT_DIR$/app/view/PieChart.js" />
         <option value="$PROJECT_DIR$/sdk/resources/css/touch-charts.css" />
         <option value="$PROJECT_DIR$/app/view/ChartPanel.js" />
@@ -177,15 +89,16 @@
         <option value="$PROJECT_DIR$/app/controller/TabController.js" />
         <option value="$PROJECT_DIR$/app/view/TreeView.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/controller/NaviController.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="554" />
-    <option name="y" value="133" />
-    <option name="width" value="1584" />
-    <option name="height" value="1178" />
+    <option name="x" value="259" />
+    <option name="y" value="121" />
+    <option name="width" value="1440" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -213,7 +126,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -353,20 +265,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InnovationFinDashBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InnovationFinDashBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -392,6 +290,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -459,13 +358,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="554" y="133" width="1584" height="1178" extended-state="0" />
+    <frame x="259" y="121" width="1440" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25695792" sideWeight="0.9986505" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24488355" sideWeight="0.9986505" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -537,21 +436,32 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.json">
+    <entry file="file://$PROJECT_DIR$/app/view/TreeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="35" selection-start="1663" selection-end="1663" vertical-scroll-proportion="-0.17770597">
+        <state line="21" column="25" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/ChartStore.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="228" selection-end="242" vertical-scroll-proportion="0.278481" />
+        <state line="10" column="25" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/json/chart/chartstore.json">
+    <entry file="file://$PROJECT_DIR$/app/controller/NaviController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="10" selection-start="667" selection-end="667" vertical-scroll-proportion="1.0094937">
+        <state line="119" column="70" selection-start="3893" selection-end="3893" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="35" selection-start="1663" selection-end="1663" vertical-scroll-proportion="-0.17770597">
           <folding />
         </state>
       </provider>
@@ -575,70 +485,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/ChartPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="371" selection-end="371" vertical-scroll-proportion="0.38718662">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/TreeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="0" selection-start="887" selection-end="8041" vertical-scroll-proportion="7.208511">
-          <folding />
-        </state>
+        <state line="15" column="20" selection-start="371" selection-end="371" vertical-scroll-proportion="0.38718662" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/TableDataView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.09192201">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.09192201" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/TabViewShow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="386" selection-end="386" vertical-scroll-proportion="0.4902507">
-          <folding />
-        </state>
+        <state line="16" column="0" selection-start="386" selection-end="386" vertical-scroll-proportion="0.4902507" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/TableView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="37" selection-start="654" selection-end="654" vertical-scroll-proportion="0.18865249">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/BarChart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="30" selection-start="1825" selection-end="1825" vertical-scroll-proportion="0.54317546" />
+        <state line="27" column="37" selection-start="654" selection-end="654" vertical-scroll-proportion="0.18865249" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/TreeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="28" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+        <state line="20" column="25" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="9" selection-start="1710" selection-end="1710" vertical-scroll-proportion="-13.4838705">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+        <state line="22" column="25" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/TabController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#160#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/NaviController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="70" selection-start="3893" selection-end="3893" vertical-scroll-proportion="0.3824131">
+        <state line="223" column="10" selection-start="7521" selection-end="7521" vertical-scroll-proportion="0.3167702">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
