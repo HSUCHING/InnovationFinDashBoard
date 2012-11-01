@@ -100,9 +100,10 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
             var nodeEnter = node.enter().append("g").attr("class", "node").attr("transform",
                 function(d) {
                     return "translate(" + source.y0 + "," + source.x0 + ")";
-                }).on("click", click);
+                }).on("click",click);
 
-            node.on("mouseover", clickShowDetail);
+//            node.on("mouseover", click2);
+
 
             nodeEnter.append("circle").attr("r", 1e-6).style("fill",
                 function(d) {
@@ -120,6 +121,20 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                 }).text(function(d) {
                     return d.name;
                 }).style("fill-opacity", 1e-6);
+
+            nodeEnter.append("text").attr("x",
+                function(d) {
+                    return d.children || d._children ? -10 : 10;
+                }).attr("dy", "1.35em").attr("text-anchor",
+                function(d) {
+                    return d.children || d._children ? "end": "start";
+                }).text(function(d) {
+                    return d.size;
+                }).style("fill-opacity", 1);
+
+
+
+            console.log(nodeEnter);
 
             // Transition nodes to their new position.
             var nodeUpdate = node.transition().duration(duration).attr("transform",
@@ -212,7 +227,12 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
             }
         }
 
+        function click2(d){
+            console.log(d);
+        }
+
         function clickShowDetail(d) {
+
             Ext.getCmp('shownodedetail').setHtml("<div class=\"detail\">Select Node:" + d.name + "</div>" + "<div class=\"detail\">Target Value:" + d.size + "</div>" + "<div class=\"detail\">Actual Value:" + d.size + "</div>");
         }
 

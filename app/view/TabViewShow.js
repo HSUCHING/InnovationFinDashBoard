@@ -37,7 +37,7 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
             }],
         listeners:{
             activeitemchange:function(item,newValue,oldValue){
-                Ext.Msg.alert("切换");
+//                Ext.Msg.alert("切换");
                 console.log(oldValue);
                 console.log(newValue);
                 newValue.addCls('colorRed');

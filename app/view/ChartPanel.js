@@ -22,7 +22,9 @@ Ext.define('InnovationFinDashBoard.view.ChartPanel', {
             type: 'slide'
         },
         items:[{
-            xtype:'barchart'
+            xtype:'columnchart'
+        },{
+            xtype:'piechart'
         }]
 
     }

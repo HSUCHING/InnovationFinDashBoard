@@ -12,7 +12,6 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
 
     config: {
 
-        style: 'border:2px black solid',
         items: [{
             xtype: "map",
             id: 'map',
@@ -34,10 +33,10 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                 maprender: function(comp, map) {
 
                     var infowindowsh = new google.maps.InfoWindow({
-                        content: '上海'
+                        content: '上海(4 Company)'
                     });
                     var infowindowbj = new google.maps.InfoWindow({
-                        content: '北京'
+                        content: '北京(4 Company)'
                     });
 
                     //latlng
@@ -91,7 +90,9 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                     };
                     google.maps.event.addListener(marker1, 'click',
                         function(event) {
-                            renderChart(marker1)
+                            renderChart(marker1);
+                            Ext.getCmp('rightchart').add({xtype:'chartpanel',height:600});
+                            Ext.getCmp('rightchart').show();
                         });
                     google.maps.event.addListener(marker2, 'click',
                         function(event) {

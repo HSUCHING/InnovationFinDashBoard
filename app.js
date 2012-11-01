@@ -11,8 +11,17 @@ Ext.application({
         'Ext.data.Store',
         'Ext.data.JsonStore',
         'Ext.data.Model',
+        'Ext.Map',
+        'Ext.chart.series.Column',
         'Ext.chart.Chart',
-        'Ext.chart.series.Series'
+        'Ext.chart.series.Series',
+        'Ext.chart.axis.Numeric',
+        'Ext.chart.interactions.Manager',
+        'Ext.chart.axis.Category',
+        'Ext.chart.series.Pie',
+        'Ext.chart.interactions.ItemInfo',
+        'Ext.chart.interactions.Rotate',
+        'Ext.chart.interactions.ItemHighlight'
     ],
 
     views: ['Main',
@@ -28,7 +37,8 @@ Ext.application({
             'DimensionItem5',
             'MapPanel',
             'ChartPanel',
-            'BarChart'
+            'ColumnChart',
+            'PieChart'
 
     ],
 
