@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created with JetBrains WebStorm.
  * User: I068959
  * Date: 10/31/12
@@ -144,8 +144,8 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                 function(d) {
                     return d.children || d._children ? "end": "start";
                 }).text(function(d) {
-                    return d.size;
-                }).style("fill-opacity", 1e-6).style("fill","red");
+                    {if(d.size>0) return d.size;else return d.size*(-1);}
+                }).style("fill-opacity", 0.3).style("fill","red");
 
 
 
