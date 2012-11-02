@@ -29,7 +29,7 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                 width:200,
                 listeners:{
                     tap:function(){
-//                        console.log(this.parent.parent.context);
+                        console.log(this.parent.parent.context);
                         Ext.Ajax.request({
                             url:'resources/json/table.json',
 //                            url:'http://localhost:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+this.parent.parent.context,

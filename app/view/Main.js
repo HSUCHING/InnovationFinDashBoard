@@ -8,11 +8,21 @@ Ext.define("InnovationFinDashBoard.view.Main", {
         id: 'myPanel',
         fullscreen: true,
         cls: 'backgd',
+//        useTitleForBackButtonText:true,
         navigationBar: {
             ui: 'dark',
             docked: 'top',
             cls: 'navibar',
-            height: 80
+            height: 80,
+            items:[{
+                xtype: 'button',
+                ui: 'confirm-forward',
+                id:'forwardBtn',
+                hidden:true,
+                text:'forward',
+                align: 'right',
+                action: 'forwardToTab'
+            }]
         },
         items: [{
             title: '<div class="hometop"></div>',
@@ -50,7 +60,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                             ////                                    id:'tabPanel'
                             ////                                }
                             //                            )
-                            Ext.Msg.alert(img.id);
+//                            Ext.Msg.alert(img.id);
 
                             var treeview = new InnovationFinDashBoard.view.TreeView({
                                 "appName": img.id

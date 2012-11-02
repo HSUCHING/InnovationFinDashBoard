@@ -18,12 +18,16 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
     config: {
         id: 'Navicontroller',
         refs: {
-            naviview:'#myPanel'
+            naviview:'#myPanel',
+            ForwardToTab:'button[action=forwardToTab]'
 
         },
         control: {
             naviview:{
                 push:'pushviewnavi'
+            },
+            ForwardToTab:{
+                tap:'forwardToTab'
             }
 
         }
@@ -32,6 +36,10 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
     pushviewnavi:function(navi,obj,eOpts){
         if(obj.id=="treeview"){
             this.pushtreeview(navi,obj,eOpts);
+        }else if(obj.id=="myPanel"){
+            Ext.getCmp('forwardBtn').hide();
+        }else if(obj.id='tabPanel'){
+            Ext.getCmp('forwardBtn').hide();
         }
     },
 
@@ -97,10 +105,17 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                 });
 
             // Enter any new nodes at the parent's previous position.
-            var nodeEnter = node.enter().append("g").attr("class", "node").attr("transform",
+//            var nodeEnter = node.enter().append("g").attr("class", "node").attr("transform",
+//                function(d) {
+//                    return "translate(" + source.y0 + "," + source.x0 + ")";
+//                }).on("mouseover",mouseover).on("click",click).on("mouseout",blur);
+
+              var nodeEnter = node.enter().append("g").attr("class", "node").attr("transform",
                 function(d) {
                     return "translate(" + source.y0 + "," + source.x0 + ")";
-                }).on("mouseover",mouseover).on("click",click).on("mouseout",blur);
+                }).on("mouseover",mouseover).on("mouseout",mouseout);
+
+
 
 //            node.on("mouseover", click2);
 
@@ -201,7 +216,7 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
             });
         }
         // Toggle children on click.
-        function click(d) {
+//        function click(d) {
 //            if (d.children) {
 //                d._children = d.children;
 //                d.children = null;
@@ -214,35 +229,36 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
 //            if (! (d.children || d._children)) {
 //                naviTo(d);
 //            }
-            naviTo(d);
-        }
-
-        function naviTo(d) {
-            var tabview = new InnovationFinDashBoard.view.TabViewShow({
-                dupontComponent: d.name
-            });
-            if(d.name!="+"&&d.name!="-"&&d.name!="*"&&d.name!="/"){
-                Ext.getCmp('myPanel').push(
-                    tabview)
-            }
-        }
+//            naviTo(d);
+//        }
 
         function mouseover(d){
             this.lastChild.style.fillOpacity=1;
+            var operationmark=d.name;
+            if(operationmark=="+"||operationmark=="-"||operationmark=="*"||operationmark=="/"){
+                Ext.getCmp('forwardBtn').hide();
+            }else{
+                Ext.getCmp('forwardBtn').setText(d.name);
+                Ext.getCmp('forwardBtn').show();
+            }
         }
 
-        function blur(d){
+        function mouseout(d){
             this.lastChild.style.fillOpacity=1e-6;
         }
 
-        function clickShowDetail(d) {
+    },
 
-            Ext.getCmp('shownodedetail').setHtml("<div class=\"detail\">Select Node:" + d.name + "</div>" + "<div class=\"detail\">Target Value:" + d.size + "</div>" + "<div class=\"detail\">Actual Value:" + d.size + "</div>");
-        }
+    naviTo:function(selectcontent) {
+        var tabview = new InnovationFinDashBoard.view.TabViewShow({
+            dupontComponent: selectcontent,
+            title:selectcontent
+        });
+        Ext.getCmp('myPanel').push(tabview);
+    },
 
+    forwardToTab:function(btn){
+        this.naviTo(btn.getText());
     }
-
-
-
 
 })
